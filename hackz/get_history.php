@@ -10,7 +10,7 @@ $statement = $database->prepare($query);
 $statement->execute();
 
 while($row = $statement->fetch()){
-	print_r($row);
+	var_dump($row);
 }
 } catch(Exception $e){
 	echo $e->getMessage();
